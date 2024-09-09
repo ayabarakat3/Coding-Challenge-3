@@ -1,4 +1,4 @@
-
+// Sample data set for testing and task 5
 let salesPeople = [
     { name: 'Alice', sales: [12000, 15000, 13000] },
     { name: 'Bob', sales: [7000, 6000, 7500] },
@@ -11,7 +11,6 @@ function calculateAverageSales(salesFigures)
 {let totalAmount = salesFigures.reduce((sum, sales) => sum + sales, 0);
 let average = totalAmount / salesFigures.length;
 return average;}
-
 // A function was created to calculate the average of the scores. 
 // Function is now complete and tested. Function is now ready to be used. 
 
@@ -26,7 +25,7 @@ function determinePerformanceRating(averageSales)
 
 // Task 3: Create a Function to Identify Top and Bottom Performers
 // A function is being created to help determine the top and bottom performers.
-// The function is being created and set to be able to find the accurate performers in order based on the chosen score. 
+// The function is being created and set to be able to find the accurate performers in order based on the given score. 
 function findTopAndBottomPerformers(salesPeople) {
 if (salesPeople.length === 0) return { topPerformer: null, bottomPerformer: null };
 let averages = salesPeople.map(person => calculateAverageSales(person.sales));
@@ -36,15 +35,14 @@ let topPerformer = salesPeople.find(person => calculateAverageSales(person.sales
 let bottomPerformer = salesPeople.find(person => calculateAverageSales(person.sales) === minAverage);
 return { topPerformer: topPerformer ? topPerformer.name : null,
         bottomPerformer: bottomPerformer ? bottomPerformer.name : null };}
-// The function is now complete and should run properly, but not yet tested. 
-
+// This function is now complete and should run properly.
 // The array is being defined to help test the function based on the scores chosen.  
 console.log(findTopAndBottomPerformers(salesPeople));
 /* Output:
 Top performer = Alice 
 Bottom performer = Charlie
 */ 
-// The function has now been complete since it has been tested and released accurate outputs. 
+// This function has now been complete since it has been tested and released accurate outputs. 
 
 // Task 4: Combine Functions to Generate a Performance Report
 function generatePerformanceReport(salesPeople) {
@@ -66,14 +64,10 @@ for (let personReport of report.report) {
 console.log(`Name: ${personReport.name}, Average Sales: ${personReport.averageSales}, Rating: ${personReport.performanceRating}`);}
 console.log(`Top Performer: ${report.topPerformer}`);
 console.log(`Bottom Performer: ${report.bottomPerformer}`);
-// All functions have now been combined. 
-
-
-
-
-
-
-
-
-
-   
+/* All functions have now been combined.
+Functions displayed all the information required. 
+Sample data set has been displayed at the very top.
+Sample sales data given has been tested.  
+All the information displayed is accurate.
+Code ran properly and displayed all outputs expected. 
+All tasks have now been completed. */
