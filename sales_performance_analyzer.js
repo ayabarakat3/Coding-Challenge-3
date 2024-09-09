@@ -65,6 +65,15 @@ for (let personReport of report.report) {
 console.log(`Name: ${personReport.name}, Average Sales: ${personReport.averageSales}, Rating: ${personReport.performanceRating}`);}
 console.log(`Top Performer: ${report.topPerformer}`);
 console.log(`Bottom Performer: ${report.bottomPerformer}`);
+/* 
+Output for performance report:
+Name: Alice, Average Sales: 13333.333333333334, Rating: Excellent
+Name: Bob, Average Sales: 6833.333333333333, Rating: Satisfactory;
+Name: Charlie, Average Sales: 3500, Rating: Needs Improvement;
+Name: Diana, Average Sales: 8900, Rating: Good
+Top Performer: Alice
+Bottom Performer: Charlie */
+
 /* All functions have now been combined.
 Functions displayed all the information required. 
 Sample data set has been displayed at the very top.
