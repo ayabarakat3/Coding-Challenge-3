@@ -57,6 +57,7 @@ var topAndBottom = findTopAndBottomPerformers(salesPeople);
 return { report: report,
         topPerformer: topAndBottom.topPerformer,
         bottomPerformer: topAndBottom.bottomPerformer};}
+
 console.log(generatePerformanceReport(salesPeople));
 const report = generatePerformanceReport(salesPeople);
 console.log("Performance Report:");
